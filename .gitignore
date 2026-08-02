@@ -1,0 +1,23 @@
+# Python 编译生成的缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+.venv/
+env/
+
+# IDE 配置
+.idea/
+.vscode/
+
+# 重点：忽略大体积训练模型与本地日志（已托管至 Google Drive）
+*.pth
+*.pt
+game/saved_games/*.json
+data/plots/
+
+# 系统临时文件
+.DS_Store
+Thumbs.db
