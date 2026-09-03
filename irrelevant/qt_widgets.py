@@ -220,4 +220,4 @@ class GameBoardWidget(QWidget):
         """鼠标离开事件"""
         if self.hover_point is not None:
             self.hover_point = None
-            self.update() 
+            self.update()

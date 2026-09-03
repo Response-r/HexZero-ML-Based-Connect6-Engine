@@ -2,11 +2,7 @@
 """
 连六游戏Qt图形界面
 """
-import sys
 import os
-import time
-import math
-import json
 from datetime import datetime
 from PyQt6.QtWidgets import (QApplication, QMainWindow, QWidget, QGridLayout,
                              QPushButton, QLabel, QVBoxLayout, QHBoxLayout, 

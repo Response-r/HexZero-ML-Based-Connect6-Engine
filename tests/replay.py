@@ -6,7 +6,7 @@ from typing import List, Tuple, Optional
 class GameRecorder:
     """游戏对局记录器"""
     
-    def __init__(self, save_dir: str = "game/saved_games"):
+    def __init__(self, save_dir: str = "tests/saved_games"):
         """初始化游戏记录器
         
         Args:

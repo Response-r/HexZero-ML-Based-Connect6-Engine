@@ -46,7 +46,7 @@
 克隆仓库并安装依赖：
 
 ```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+git clone https://github.com/Response-r/HexZero-ML-Based-Connect6-Engine
 cd your-repo-name
 pip install -r requirements.txt
 ```
@@ -91,17 +91,16 @@ python run_ai_battles.py
 
 ## 📊 实验与可视化示例
 
-项目运行对战或训练后，会自动在 `data/plots/` 目录下的 `ai_battle_visualizations` 文件夹 和 `self_play_training_visualizations` 文件夹中分别导出各算法在先手（First Mover）与后手（Second Mover）下的对比统计柱状图及 DQN 训练收敛折线图。
+项目运行对战或训练后，会自动在 `data/plots/` 目录下的 `ai_battle_visualizations` 文件夹 和 `self_play_training_visualizations` 文件夹中分别导出各算法在先手（First Mover）与后手（Second Mover）下的对比统计柱状图及 DQN 训练收敛折线图：
+<img width="5628" height="2678" alt="图4-10 DQN对战情况统计" src="https://github.com/user-attachments/assets/1b123be7-9b38-48ce-a670-abab027bef3e" /> 
+<img width="8400" height="3000" alt="图4-6 p1探索率变化情况" src="https://github.com/user-attachments/assets/46193b2a-b320-403c-b687-a0d8901bcbb0" />
 
 ## 📦 预训练模型与实验数据下载 (Google Drive)
 
-为保持仓库轻量，已将训练好的 DQN 模型权重、对战原始数据及完整图表上传至 Google Drive：
+为保持仓库轻量，已将训练好的 DQN 模型权重、对战原始数据、原始JSON棋谱和各AI算法对战统计图表一并上传至 Google Drive：
 
 👉 **[点击前往 Google Drive 下载模型与数据](https://drive.google.com/file/d/1VrCi26ycr1fotqjq6Mn-RrQJ8RnV5ITK/view?usp=sharing)**
 
-各AI对战原始 JSON 棋谱及高清统计图表也已一并托管至 Google Drive：
-
-👉 **[点击前往 Google Drive 下载模型与数据](https://drive.google.com/file/d/14lRyJYsZw9p3CV8uwdWf50AMaYBJT9Mk/view?usp=sharing)**
 
 ### 资源包含说明：
 1. **预训练模型 (`/models`)**：包含训练收敛的 `.pth` 权重文件。下载后请放置在指定路径下并由代码指定使用路径，即可直接加载使用。

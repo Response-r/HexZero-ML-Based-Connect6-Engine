@@ -7,8 +7,6 @@ import os
 import sys
 import queue # 导入 queue 模块以捕获 Empty 异常
 import json # 添加 json 导入
-import random # 确保导入 random
-import argparse # <<<<<<<<<<< 导入 argparse
 import threading # <<<<<<<<<<< 导入 threading
 
 
@@ -20,7 +18,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspa
 # 直接导入所需模块
 try:
     from game.engine import GameEngine  
-    from game.ai_dqn import AIPlayer, Experience    
+    from game.ai_dqn import AIPlayer, Experience
     # print("成功导入游戏引擎和AI模块")
     # # <<<<<<<<<<< 添加诊断打印 >>>>>>>>>>>
     # print(f"诊断: AIPlayer 类型在导入后: {type(AIPlayer)}")
@@ -76,7 +74,6 @@ def _play_single_game_worker_standalone(game_id, p1_model_path, p2_model_path, e
     from game.engine import GameEngine
     from game.ai_dqn import AIPlayer
     import torch
-    import numpy as np
     import os
     import queue # 需要在 worker 中访问 queue.Full
     import traceback
